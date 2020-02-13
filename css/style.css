@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("rockywall.png");
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica";
+}
+/* Header and Navagation bar */
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: white;
+  border-bottom: 1px solid #101010;
+}
+
+.inner_header {
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo_container {
+  height: 100%;
+  display: table;
+  float: left;
+  background-color: #800;
+  position: relative;
+}
+
+.logo_container h1 {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Helvetica";
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.logo_container h1 span {
+  font-weight: 800;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+.navigation a:last-child {
+  padding-right: 0;
+}
+
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: grey;
+  font-family: "Helvetica";
+  font-size: 16px;
+}
+
+.navigation a li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Footerbar */
+
+footer {
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+  background-color: #800000;
+  font-family: "Helvetica";
+  border-top: 6px solid #101010;
+  position: relative;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+/* This section contains About Me */
+
+.content {
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 40px auto;
+  background-color: white;
+  border: 1px solid #101010;
+}
+
+.content_inner {
+  padding: 20px;
+}
+
+.content_inner h1 {
+  color: #800000;
+  border-bottom: 1px solid #101010;
+  margin-bottom: 25px;
+}
+
+.Headshot {
+  width: 200px;
+  height: 150px;
+  float: left;
+  padding-right: 7px;
+  margin: 10px 10px 10px;
+}
+
+.body {
+  font-size: 18px;
+}
+
+/* This is the Portfolio Page */
+
+.content_portfolio::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.work {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.work_name {
+  background-color: #800000;
+  color: white;
+  width: 200px;
+  line-height: 40px;
+  position: absolute;
+  margin: 0;
+  bottom: 10px;
+}
+
+/* This section conatins the Contact Page */
+
+.txtb {
+  padding: 10px 0px;
+}
+
+.txtb input,
+.txtb textarea {
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.btn {
+  color: white;
+  background-color: #800000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* All media responsive */
+
+@media screen and (max-width: 980px) {
+  .inner_header {
+    width: 760px;
+    position: relative;
+    margin: 0;
+  }
+
+  .logo_container {
+    margin-left: 50px;
+  }
+
+  .content {
+    width: 700px;
+    margin-left: 50px;
+    margin-bottom: auto;
+  }
+
+  .navigation {
+    position: relative;
+  }
+
+  .work {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo_container {
+    margin-left: 10px;
+  }
+  .inner_header {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+
+  .navigation {
+    margin-right: 10px;
+  }
+  .content {
+    margin-left: 10px;
+  }
+
+  .header {
+    position: relative;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .logo_container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .navigation {
+    width: 100%;
+    float: left;
+    background-color: white;
+    border-bottom: 1px solid #101010;
+  }
+
+  a {
+    margin-left: 50px;
+  }
+
+  .content {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 60px;
+  }
+
+  .work {
+    width: 100%;
+    padding-left: 120px;
+  }
+}
